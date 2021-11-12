@@ -3,7 +3,7 @@
 
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
 
-   android:id="@+id/selector"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -12,6 +12,7 @@
 
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -20,12 +21,27 @@
 
 
         <TextView
+            android:id="@+id/firstText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="¿GIRAMOS?"
             android:textSize="35sp"
             />
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haz click y te saludo !!!"
+            android:visibility="gone"
+            android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:visibility="gone"
 
+            />
 
         <RadioGroup
             android:id="@+id/rgSelection"
@@ -37,7 +53,7 @@
                 android:id="@+id/rbtSi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
+
                 android:text="Texto"
                 />
 
@@ -45,7 +61,6 @@
                 android:id="@+id/rbtNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
                 android:text="Imagen"
                 />
 
@@ -61,22 +76,11 @@
             android:text="ACEPTAR"/>
 
 
+
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:visibility="gone">
 
-
-        <TextView
-            android:id="@+id/tvText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Haz click y te saludo !!!"
-            android:visibility="gone"/>
-    </LinearLayout>
 
 
 
